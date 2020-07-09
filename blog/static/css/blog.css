@@ -1,4 +1,6 @@
-
+body {
+  background-color: #F5F5F5;
+}
 
 .techfont{
   font-family: 'Russo One', sans-serif;
@@ -78,4 +80,21 @@ i.fa.fa-pencil-alt {
   0%{filter: hue-rotate(0deg);}
   100%{filter:hue-rotate(360deg);}
 
+}
+.about-blog {
+  margin: 0 auto;
+}
+.about {
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 6rem;
+  color: #C17C7C;
+
+}
+p {
+  font-size: 1.5rem;
+  
+  margin-left: 6rem;
+  text-align: center;
+  color: #979393;
 }
