@@ -7,6 +7,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 <!-- MEDIUM STYLE EDITOR -->
 <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
@@ -21,23 +27,25 @@
   </head>
   <body class="loader">
 
+
+
     <!-- NAV -->
-    <nav class="navbar navbar-default techfont custom-navbar">
+    <nav class="navbar navbar-expand-lg techfont custom-navbar pb-5">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li><a href="{% url post_list %}" class="navbar-brand bigbrand">My Blog</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="https://github.com/shownola/blog_pro">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/">LinkedIn</a></li>
+          <li><a href="{% url 'post_list' %}" class="navbar-brand bigbrand">My Blog</a></li>
+          <li><a href="{% url 'about' %}" class="nav-link pt-3">About</a></li>
+          <li><a href="https://github.com/shownola/blog_pro" class="nav-link pt-3">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/" class="nav-link pt-3">LinkedIn</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
             <li><a href="{% url 'post_new' %}">New Post</a></li>
-            <li><a href="{% url 'post_draft_list' %}">Drafts</a></li>
-            <li><a href="{% url 'logout' %}">Log Out</a></li>
-            <li><a href="#">Welcome: {{user.username}}</a></li>
+            <li><a href="{% url 'post_draft_list' %}" class="pl-3">Drafts</a></li>
+            <li><a href="{% url 'logout' %}" class="pl-3">Logout</a></li>
+            <li><a href="{% url 'login' %}" class="pl-3">Welcome: {{user.username}}</a></li>
           {% else %}
-          <li><a class="nav navbar" href="{% url 'login'}"><span class="glyphicon glyphicon-user"></span></a></li>
+          <li><a class="nav navbar" href="{% url 'login' %}"><span><i class="fa fa-user pt-3"></i></span></a></li>
           {% endif %}
         </ul>
       </div>

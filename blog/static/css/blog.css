@@ -1,6 +1,4 @@
-body {
-  background-color: red;
-}
+
 
 .techfont{
   font-family: 'Russo One', sans-serif;
@@ -37,6 +35,12 @@ body {
   font-size: 1.5em;
 }
 
+i.fa.fa-user {
+  font-size: 2rem;
+}
+i.fa.fa-pencil-alt {
+  color: red;
+}
 
 /*COLOR CHANGER*/
 /*Credit and Source: http://codepen.io/thapliyalshivam/pen/dvgXVO*/
