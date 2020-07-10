@@ -6,5 +6,6 @@ This site is a simple multi-user blogging application. Some of the features of t
 
 Medium Editor is a standalone javascript library used for creating a rich text editing solution. It offers a floating text editor bar that appears when you are writing content for your blog article.
 
+You casn visit the site at https://swasieko.pythonanywhere.com/
 
 Thanks for checking it out!
